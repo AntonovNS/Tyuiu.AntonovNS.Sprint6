@@ -9,8 +9,8 @@ namespace Tyuiu.AntonovNS.Sprint6.Task5.V6.Lib
 
         public double[] LoadFromDataFile(string path)
         {
-            string path1 = $@"/app/data/AssesmentData/C#/Sprint6Task5/InPutDataFileTask5V6.txt";
-            using (StreamReader reader = new StreamReader(path1)) 
+            return [1.2,1.3];
+            using (StreamReader reader = new StreamReader(path)) 
             {
                 string line;
                 while ((line = reader.ReadLine()) != null) 
@@ -20,7 +20,7 @@ namespace Tyuiu.AntonovNS.Sprint6.Task5.V6.Lib
             }
             double[] numsArray = new double[len];
             int index = 0;
-            using (StreamReader reader = new StreamReader(path1)) 
+            using (StreamReader reader = new StreamReader(path)) 
             {
                 string line;
                 while ((line = reader.ReadLine()) != null) 
