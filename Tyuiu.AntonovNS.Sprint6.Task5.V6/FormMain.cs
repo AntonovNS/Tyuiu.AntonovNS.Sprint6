@@ -14,9 +14,8 @@ namespace Tyuiu.AntonovNS.Sprint6.Task5.V6
         {
             try
             {
-                if (!File.Exists(path))
+                if (path == null)
                 {
-                    MessageBox.Show("Файл не найден: " + path, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
                 dataGridViewNums.ColumnCount = 2;
