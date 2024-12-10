@@ -18,8 +18,7 @@ namespace Tyuiu.AntonovNS.Sprint6.Task5.V6
                 dataGridViewNums.Columns[0].Width = 20;
                 dataGridViewNums.Columns[1].Width = 50;
 
-                double[] numsMass = new double[ds.len];
-                numsMass = ds.LoadFromDataFile(path);
+                double[] numsMass = ds.LoadFromDataFile(path);
                 for (int i = 0; i < numsMass.Length; i++)
                 {
                     dataGridViewNums.Rows.Add(Convert.ToString(i), Convert.ToString(numsMass[i]));
