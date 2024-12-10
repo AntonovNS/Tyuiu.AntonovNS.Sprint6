@@ -14,13 +14,10 @@ namespace Tyuiu.AntonovNS.Sprint6.Task3.V22
             try
             {
                 int[,] s = { { 17, 0, 19, -9, -1 }, { 9, 4, -5, 7, 15 }, { 11, 13, 4, -4, -14 }, { 11, 14, 5, -15, 16 }, { 2, -14, -2, 11, 11 } };
-                string strLine;
-                int len = ds.Calculate(s).Length;
-                int[,] valueArray;
-                valueArray = ds.Calculate(s);
-                for (int i = 0; i < 4; i++)
+                int[,] valueArray= ds.Calculate(s);
+                for (int i = 0; i < 5; i++)
                 {
-                    this.dataGridViewFunction.Rows.Add(Convert.ToString(valueArray[i, 0]), Convert.ToString(valueArray[i, 1]), Convert.ToString(valueArray[i, 2]), Convert.ToString(valueArray[i, 3]));
+                    this.dataGridViewFunction.Rows.Add(Convert.ToString(valueArray[i, 0]), Convert.ToString(valueArray[i, 1]), Convert.ToString(valueArray[i, 2]), Convert.ToString(valueArray[i, 3]), Convert.ToString(valueArray[i, 4]));
                 }
             }
             catch
