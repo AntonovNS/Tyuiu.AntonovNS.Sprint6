@@ -23,7 +23,7 @@ namespace Tyuiu.AntonovNS.Sprint6.Task1.V19
                 textBoxRes_ANS.AppendText("+------------+------------+" + Environment.NewLine);
                 textBoxRes_ANS.AppendText("|     X      |    F(x)    |" + Environment.NewLine);
                 textBoxRes_ANS.AppendText("+------------+------------+" + Environment.NewLine);
-                for (int i = 0;i<=len-1;i++) 
+                for (int i = 0; i < len;  i++) 
                 {
                     strLine = String.Format("|{0,5:d}    |  {1, 5:f2}  | ", startStep, valueArray[i]);
                     textBoxRes_ANS.AppendText(strLine + Environment.NewLine);
