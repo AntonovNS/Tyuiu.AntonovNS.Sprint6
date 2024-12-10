@@ -9,7 +9,8 @@ namespace Tyuiu.AntonovNS.Sprint6.Task7.V9.Lib
 
         public int[,] GetMatrix(string path)
         {
-            return "1";
+            int[,] res = { { 1, 2, 3 }, { 1, 2, 3 } };
+            return res;
         }
 
         public double[] LoadFromDataFile(string path)
