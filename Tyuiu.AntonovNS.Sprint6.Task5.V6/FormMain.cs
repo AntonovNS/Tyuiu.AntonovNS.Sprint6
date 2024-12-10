@@ -14,6 +14,10 @@ namespace Tyuiu.AntonovNS.Sprint6.Task5.V6
         {
             try
             {
+                if (!File.Exists(path))
+                {
+                    MessageBox.Show("¬ведены неверные данные", "ќшибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
                 dataGridViewNums.ColumnCount = 2;
                 dataGridViewNums.Columns[0].Width = 20;
                 dataGridViewNums.Columns[1].Width = 50;
@@ -28,6 +32,7 @@ namespace Tyuiu.AntonovNS.Sprint6.Task5.V6
             }
             catch
             {
+
                 MessageBox.Show("¬ведены неверные данные", "ќшибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
