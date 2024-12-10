@@ -14,10 +14,6 @@ namespace Tyuiu.AntonovNS.Sprint6.Task5.V6
         {
             try
             {
-                if (path == null)
-                {
-                    return;
-                }
                 dataGridViewNums.ColumnCount = 2;
                 dataGridViewNums.Columns[0].Width = 20;
                 dataGridViewNums.Columns[1].Width = 50;
