@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Tyuiu.AntonovNS.Sprint6.Task1.V19.Lib\Tyuiu.AntonovNS.Sprint6.Task1.V19.Lib.csproj" />
+    <ProjectReference Include="..\Tyuiu.AntonovNS.Sprint6.Task2.V5.Lib\Tyuiu.AntonovNS.Sprint6.Task2.V5.Lib.csproj" />
   </ItemGroup>
 
 </Project>
