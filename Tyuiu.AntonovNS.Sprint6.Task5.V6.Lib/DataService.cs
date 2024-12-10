@@ -8,6 +8,10 @@ namespace Tyuiu.AntonovNS.Sprint6.Task5.V6.Lib
         public int len = 0;
         public double[] LoadFromDataFile(string path)
         {
+            if (!File.Exists(path))
+            {
+                throw new FileNotFoundException($"Файл не найден: {path}");
+            }
             using (StreamReader reader = new StreamReader(path)) 
             {
                 string line;
