@@ -14,6 +14,11 @@ namespace Tyuiu.AntonovNS.Sprint6.Task5.V6
         {
             try
             {
+                if (!File.Exists(path))
+                {
+                    MessageBox.Show("Файл не найден: " + path, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
                 dataGridViewNums.ColumnCount = 2;
                 dataGridViewNums.Columns[0].Width = 20;
                 dataGridViewNums.Columns[1].Width = 50;
