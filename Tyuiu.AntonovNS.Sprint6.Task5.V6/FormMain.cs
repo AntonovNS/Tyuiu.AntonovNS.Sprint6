@@ -9,15 +9,11 @@ namespace Tyuiu.AntonovNS.Sprint6.Task5.V6
             InitializeComponent();
         }
         DataService ds = new DataService();
-        string path = @"{Directory.GetCurrentDirectory\InPutDataFileTask5V6}";
+        string path = Path.Combine(Directory.GetCurrentDirectory(), "InPutDataFileTask5V6.txt");
         private void buttonDone_Click(object sender, EventArgs e)
         {
             try
             {
-                if (!File.Exists(path))
-                {
-                    MessageBox.Show("¬ведены неверные данные", "ќшибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
                 dataGridViewNums.ColumnCount = 2;
                 dataGridViewNums.Columns[0].Width = 20;
                 dataGridViewNums.Columns[1].Width = 50;
