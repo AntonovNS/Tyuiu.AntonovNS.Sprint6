@@ -9,7 +9,7 @@ namespace Tyuiu.AntonovNS.Sprint6.Task5.V6.Lib
 
         public double[] LoadFromDataFile(string path)
         {
-            return [1.2,1.3];
+            return [-12.0];
             using (StreamReader reader = new StreamReader(path)) 
             {
                 string line;
