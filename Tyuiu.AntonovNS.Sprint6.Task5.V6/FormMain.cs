@@ -9,7 +9,7 @@ namespace Tyuiu.AntonovNS.Sprint6.Task5.V6
             InitializeComponent();
         }
         DataService ds = new DataService();
-        string path = @"C:\\data/AssesmentData/C#/Sprint6Task5/InPutDataFileTask5V6.txt";
+        string path = @"C:\\app/data/AssesmentData/C#/Sprint6Task5/InPutDataFileTask5V6.txt";
         private void buttonDone_Click(object sender, EventArgs e)
         {
             try
