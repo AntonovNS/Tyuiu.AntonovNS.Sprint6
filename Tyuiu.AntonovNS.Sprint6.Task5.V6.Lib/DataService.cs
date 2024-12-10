@@ -9,7 +9,7 @@ namespace Tyuiu.AntonovNS.Sprint6.Task5.V6.Lib
 
         public double[] LoadFromDataFile(string path)
         {
-            string path1 = Path.Combine(Directory.GetCurrentDirectory(), "Sprint6Task5/InPutDataFileTask5V6.txt");
+            string path1 = Path.Combine(Directory.GetCurrentDirectory(), "InPutDataFileTask5V6.txt");
             using (StreamReader reader = new StreamReader(path1)) 
             {
                 string line;
