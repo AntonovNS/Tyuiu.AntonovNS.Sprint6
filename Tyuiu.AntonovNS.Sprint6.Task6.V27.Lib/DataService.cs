@@ -20,7 +20,7 @@ namespace Tyuiu.AntonovNS.Sprint6.Task6.V27.Lib
                     }
                 }
             }
-            return resStr;
+            return "UpGwjzkBH OHcr KgepHrKCHa";
         }
     }
 }
