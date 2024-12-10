@@ -18,9 +18,9 @@ namespace Tyuiu.AntonovNS.Sprint6.Task3.V22
                 int len = ds.Calculate(s).Length;
                 int[,] valueArray;
                 valueArray = ds.Calculate(s);
-                for (int i = 0; i < 5; i++)
+                for (int i = 0; i < 4; i++)
                 {
-                    this.dataGridViewFunction.Rows.Add(Convert.ToString(valueArray[i, 0]), Convert.ToString(valueArray[i, 1]), Convert.ToString(valueArray[i, 2]), Convert.ToString(valueArray[i, 3]), Convert.ToString(valueArray[i, 4]));
+                    this.dataGridViewFunction.Rows.Add(Convert.ToString(valueArray[i, 0]), Convert.ToString(valueArray[i, 1]), Convert.ToString(valueArray[i, 2]), Convert.ToString(valueArray[i, 3]));
                 }
             }
             catch
