@@ -32,22 +32,16 @@ namespace Tyuiu.AntonovNS.Sprint6.Task5.V6
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             groupBoxUsl_ANS = new GroupBox();
             textBoxTask_ANS = new TextBox();
             groupBoxRes_ANS = new GroupBox();
             groupBoxResV_ANS = new GroupBox();
+            dataGridViewNums = new DataGridView();
             buttonVipol_ANS = new Button();
             buttonHelp_ANS = new Button();
-            chartFunction = new System.Windows.Forms.DataVisualization.Charting.Chart();
             buttonSave = new Button();
-            dataGridViewNums = new DataGridView();
             groupBoxRes_ANS.SuspendLayout();
             groupBoxResV_ANS.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)chartFunction).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewNums).BeginInit();
             SuspendLayout();
             // 
@@ -90,6 +84,14 @@ namespace Tyuiu.AntonovNS.Sprint6.Task5.V6
             groupBoxResV_ANS.TabStop = false;
             groupBoxResV_ANS.Text = "Результат:";
             // 
+            // dataGridViewNums
+            // 
+            dataGridViewNums.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewNums.Location = new Point(8, 25);
+            dataGridViewNums.Name = "dataGridViewNums";
+            dataGridViewNums.Size = new Size(145, 343);
+            dataGridViewNums.TabIndex = 0;
+            // 
             // buttonVipol_ANS
             // 
             buttonVipol_ANS.Location = new Point(471, 346);
@@ -110,27 +112,6 @@ namespace Tyuiu.AntonovNS.Sprint6.Task5.V6
             buttonHelp_ANS.UseVisualStyleBackColor = true;
             buttonHelp_ANS.Click += buttonHelp_Click;
             // 
-            // chartFunction
-            // 
-            chartArea1.Name = "ChartArea1";
-            chartFunction.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            chartFunction.Legends.Add(legend1);
-            chartFunction.Location = new Point(811, 68);
-            chartFunction.Name = "chartFunction";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series1.IsVisibleInLegend = false;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            chartFunction.Series.Add(series1);
-            chartFunction.Size = new Size(658, 352);
-            chartFunction.TabIndex = 9;
-            chartFunction.Text = "chart1";
-            title1.Name = "Title1";
-            title1.Text = "График функции";
-            chartFunction.Titles.Add(title1);
-            // 
             // buttonSave
             // 
             buttonSave.Location = new Point(378, 346);
@@ -141,21 +122,12 @@ namespace Tyuiu.AntonovNS.Sprint6.Task5.V6
             buttonSave.UseVisualStyleBackColor = true;
             buttonSave.Click += buttonSave_Click;
             // 
-            // dataGridViewNums
-            // 
-            dataGridViewNums.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewNums.Location = new Point(8, 25);
-            dataGridViewNums.Name = "dataGridViewNums";
-            dataGridViewNums.Size = new Size(145, 343);
-            dataGridViewNums.TabIndex = 0;
-            // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1498, 450);
             Controls.Add(buttonSave);
-            Controls.Add(chartFunction);
             Controls.Add(buttonHelp_ANS);
             Controls.Add(buttonVipol_ANS);
             Controls.Add(groupBoxRes_ANS);
@@ -169,7 +141,6 @@ namespace Tyuiu.AntonovNS.Sprint6.Task5.V6
             TopMost = true;
             groupBoxRes_ANS.ResumeLayout(false);
             groupBoxResV_ANS.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)chartFunction).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewNums).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -182,7 +153,6 @@ namespace Tyuiu.AntonovNS.Sprint6.Task5.V6
         private GroupBox groupBoxResV_ANS;
         private Button buttonVipol_ANS;
         private Button buttonHelp_ANS;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartFunction;
         private Button buttonSave;
         private DataGridView dataGridViewNums;
     }

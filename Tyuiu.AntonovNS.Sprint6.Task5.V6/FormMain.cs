@@ -15,17 +15,15 @@ namespace Tyuiu.AntonovNS.Sprint6.Task5.V6
             try
             {
                 dataGridViewNums.ColumnCount = 2;
-                dataGridViewNums.ColumnCount[0].Width = 20;
-                dataGridViewNums.ColumnCount[1].Width = 50;
-                this.chartDiag.ChartAreas[0].AxisX.Title = "Îñü X";
-                this.chartDiag.ChartAreas[0].AxisY.Title = "Îñü Y";
-                chartDiag.Series[0].Points.Clear();
+                dataGridViewNums.Columns[0].Width = 20;
+                dataGridViewNums.Columns[1].Width = 50;
+
                 double[] numsMass = new double[ds.len];
                 numsMass = ds.LoadFromDataFile(path);
                 for (int i = 0; i < numsMass.Length; i++)
                 {
                     dataGridViewNums.Rows.Add(Convert.ToString(i), Convert.ToString(numsMass[i]));
-                    chartDiag.Series[0].Points.AddXY(i, numsMass[i]);
+
                 }
             }
             catch
