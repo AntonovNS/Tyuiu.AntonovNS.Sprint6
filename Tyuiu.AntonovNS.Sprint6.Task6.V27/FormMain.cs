@@ -11,7 +11,6 @@ namespace Tyuiu.AntonovNS.Sprint6.Task6.V27
             openFileDialogTask.ShowDialog();
             openFilePath = openFileDialogTask.FileName;
             textBoxLoadFromFile.Text = File.ReadAllText(openFilePath);
-            groupBox
         }
 
         private void openFileDialog1_FileOk(object sender, System.ComponentModel.CancelEventArgs e)

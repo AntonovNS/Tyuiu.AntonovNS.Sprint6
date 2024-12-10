@@ -6,6 +6,7 @@ namespace Tyuiu.AntonovNS.Sprint6.Task5.V6.Lib
     public class DataService : ISprint6Task5V6
     {
         public int len = 0;
+
         public double[] LoadFromDataFile(string path)
         {
             using (StreamReader reader = new StreamReader(path)) 
